@@ -59,5 +59,15 @@ public class ConfigReader {
 
 		return pro.getProperty("confirmpassword");
 	}
+	
+	public String getChangepassword() {
+
+		return pro.getProperty("changepassword");
+	}
+	
+	public String getConfirmChangepassword() {
+
+		return pro.getProperty("confirmchangepassword");
+	}
 
 }

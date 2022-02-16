@@ -6,11 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class RegisterAccount {
+public class RegisterAccountPage {
 
 	WebDriver ldriver;
 
-	public RegisterAccount(WebDriver rdriver) {
+	public RegisterAccountPage(WebDriver rdriver) {
 
 		this.ldriver = rdriver;
 		PageFactory.initElements(rdriver, this);

@@ -3,8 +3,10 @@ package com.test.com;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
+import com.pages.com.AccountPage;
+import com.pages.com.ChangePasswordPage;
 import com.pages.com.HomePage;
-import com.pages.com.RegisterAccount;
+import com.pages.com.RegisterAccountPage;
 
 public class TestingApp extends BaseClass {
 
@@ -22,7 +24,7 @@ public class TestingApp extends BaseClass {
 		homePage.clickMyaccount();
 		homePage.clickRegistor();
 		
-		RegisterAccount account=new RegisterAccount(driver);
+		RegisterAccountPage account=new RegisterAccountPage(driver);
 		account.enterFirstName(reader.getFirstName());
 		account.enterLastName(reader.getLastName());
 		account.enterEmail(reader.getemail());
@@ -36,6 +38,19 @@ public class TestingApp extends BaseClass {
 		account.SuccessMessageValidate();
 		account.clickContinueafterSuccess();
 		
+		
+		AccountPage accountPage=new AccountPage(driver);
+		accountPage.AccountPageValidation();
+		accountPage.clickChangePassword();
+		
+		
+		ChangePasswordPage changePassword=new ChangePasswordPage(driver);
+		changePassword.enterChangePassword(reader.getChangepassword());
+		changePassword.enterConfirmChangePassword(reader.getConfirmChangepassword());
+		changePassword.clickContinue();
+		
+		accountPage.clickAccountBtn();
+		accountPage.clickLogOutBtn();
 		
 		
 	}
