@@ -11,7 +11,7 @@ import com.pages.com.RegisterAccountPage;
 import com.utility.com.MongoDbTestListner;
 
 
-@Listeners(MongoDbTestListner.class)
+
 public class TestingApp extends BaseClass {
 
 	
