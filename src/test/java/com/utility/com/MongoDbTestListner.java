@@ -2,7 +2,6 @@ package com.utility.com;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 import org.bson.Document;
 import org.testng.ITestContext;
@@ -10,9 +9,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.mongodb.client.MongoClient;
-import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
 
 public class MongoDbTestListner implements ITestListener {
 

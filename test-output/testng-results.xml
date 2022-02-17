@@ -2,24 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17832" started-at="2022-02-17T15:55:25Z" finished-at="2022-02-17T15:55:42Z">
+  <suite name="Default suite" duration-ms="10946" started-at="2022-02-17T17:24:52Z" finished-at="2022-02-17T17:25:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17832" started-at="2022-02-17T15:55:25Z" finished-at="2022-02-17T15:55:42Z">
+    <test name="Default test" duration-ms="10946" started-at="2022-02-17T17:24:52Z" finished-at="2022-02-17T17:25:03Z">
       <class name="com.test.com.TestingApp">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.com.TestingApp@419c5f1a]" name="setup" is-config="true" duration-ms="11756" started-at="2022-02-17T15:55:25Z" finished-at="2022-02-17T15:55:36Z">
+        <test-method status="PASS" signature="connectMongoDB()[pri:0, instance:com.test.com.TestingApp@12b0404f]" name="connectMongoDB" is-config="true" duration-ms="343" started-at="2022-02-17T17:24:52Z" finished-at="2022-02-17T17:24:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectMongoDB -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.com.TestingApp@12b0404f]" name="setup" is-config="true" duration-ms="4090" started-at="2022-02-17T17:24:52Z" finished-at="2022-02-17T17:24:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="titleTest()[pri:0, instance:com.test.com.TestingApp@419c5f1a]" name="titleTest" duration-ms="6024" started-at="2022-02-17T15:55:36Z" finished-at="2022-02-17T15:55:42Z">
+        <test-method status="PASS" signature="titleTest()[pri:0, instance:com.test.com.TestingApp@12b0404f]" name="titleTest" duration-ms="5976" started-at="2022-02-17T17:24:56Z" finished-at="2022-02-17T17:25:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.TestingApp@419c5f1a]" name="teardown" is-config="true" duration-ms="4" started-at="2022-02-17T15:55:42Z" finished-at="2022-02-17T15:55:42Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.TestingApp@12b0404f]" name="teardown" is-config="true" duration-ms="850" started-at="2022-02-17T17:25:02Z" finished-at="2022-02-17T17:25:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=titleTest status=SUCCESS method=TestingApp.titleTest()[pri:0, instance:com.test.com.TestingApp@419c5f1a] output={null}]]]>
+                <![CDATA[[TestResult name=titleTest status=SUCCESS method=TestingApp.titleTest()[pri:0, instance:com.test.com.TestingApp@12b0404f] output={null}]]]>
               </value>
             </param>
           </params>

@@ -2,8 +2,7 @@ package com.utility.com;
 
 import java.io.File;
 import java.sql.Date;
-import java.text.SimpleDateFormat;
-import java.util.logging.FileHandler;
+
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
