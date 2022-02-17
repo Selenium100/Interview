@@ -31,6 +31,7 @@ public class BaseClass {
 			driver.get(reader.getAppUrl());
 			driver.manage().window().maximize();
 			
+			
 		
 	}
 	
