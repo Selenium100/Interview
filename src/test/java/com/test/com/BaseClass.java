@@ -1,10 +1,15 @@
 package com.test.com;
 
+import java.util.function.Predicate;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.utility.com.ConfigReader;
+import com.utility.com.Utility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,14 +30,18 @@ public class BaseClass {
 			driver=new ChromeDriver();
 			driver.get(reader.getAppUrl());
 			driver.manage().window().maximize();
-		
-		
-		
+			
 		
 	}
 	
-	public void teardown() {
-		driver.quit();
+	@AfterMethod
+	public void teardown(ITestResult result) {
+		
+		
+		if(ITestResult.FAILURE==result.getStatus()) {
+			
+			Utility.takescreenshot(driver);
+		}
 	}
 	
 

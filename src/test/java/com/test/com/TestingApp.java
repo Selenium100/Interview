@@ -1,13 +1,17 @@
 package com.test.com;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.pages.com.AccountPage;
 import com.pages.com.ChangePasswordPage;
 import com.pages.com.HomePage;
 import com.pages.com.RegisterAccountPage;
+import com.utility.com.MongoDbTestListner;
 
+
+@Listeners(MongoDbTestListner.class)
 public class TestingApp extends BaseClass {
 
 	
