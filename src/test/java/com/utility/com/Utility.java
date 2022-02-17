@@ -22,6 +22,8 @@ public interface Utility  {
 	
 	static void takescreenshot(WebDriver driver) {
 		
+		
+		
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
 		File target=new File("./screenshots/"+currectdate()+".png");
