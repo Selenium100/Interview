@@ -15,6 +15,7 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.utility.com.ConfigReader;
+import com.utility.com.ExcelUtils;
 import com.utility.com.Utility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -22,22 +23,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 
 	public static WebDriver driver;
-	//MongoCollection<Document> webCollection;
-	//public static Document d1;
 
 	ConfigReader reader = new ConfigReader();
+	ExcelUtils utils = new ExcelUtils("./datalist.xlsx", "Sheet1");
 
-	/*
-	 * @BeforeSuite public void connectMongoDB() { Logger mongoLogger =
-	 * Logger.getLogger("org.mongodb.driver"); MongoClient mongoClient =
-	 * MongoClients.create("mongodb://localhost:27017"); MongoDatabase database =
-	 * mongoClient.getDatabase("autoDB");
-	 * 
-	 * // create Collection database.getCollection("web").drop(); webCollection =
-	 * database.getCollection("web");
-	 * 
-	 * }
-	 */
+	MongoCollection<Document> webCollection;
+	public static Document d1;
 
 	@BeforeMethod
 	public void setup() {
@@ -49,6 +40,17 @@ public class BaseClass {
 
 	}
 
+	@BeforeSuite
+	public void connectMongoDB() {
+		Logger mongoLogger = Logger.getLogger("org.mongodb.driver");
+		MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+		MongoDatabase database = mongoClient.getDatabase("autoDB");
+
+		// create Collection database.getCollection("web").drop(); webCollection =
+		database.getCollection("web");
+
+	}
+
 	@AfterMethod
 	public void teardown(ITestResult result) {
 
@@ -56,7 +58,7 @@ public class BaseClass {
 
 			Utility.takescreenshot(driver);
 		}
-		
+
 		driver.quit();
 	}
 

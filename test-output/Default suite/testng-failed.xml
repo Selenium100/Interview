@@ -5,9 +5,16 @@
     <classes>
       <class name="com.test.com.TestingApp">
         <methods>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+          <include name="connectMongoDB"/>
+>>>>>>> 3ca893093fa24ac6a4f4f12fb2984ae825b2278b
+>>>>>>> 4c0a6fbfe79dce099c6b55bf6701e52ea160a2f2
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="titleTest"/>
+          <include name="titleTest" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.test.com.TestingApp -->
     </classes>

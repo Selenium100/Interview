@@ -2,6 +2,9 @@ package com.utility.com;
 
 import java.io.File;
 import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.logging.FileHandler;
 
 
 import org.apache.commons.io.FileUtils;
@@ -13,8 +16,8 @@ public interface Utility  {
 	
 	
 	static String currectdate() {
-		Date date = new Date(System.currentTimeMillis());
-		return date.toString();
+		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+		return timeStamp;
 	}
 	
 	
@@ -25,6 +28,7 @@ public interface Utility  {
 		
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
+		System.out.println(currectdate());
 		File target=new File("./screenshots/"+currectdate()+".png");
 		try {
 			
