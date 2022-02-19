@@ -22,22 +22,22 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 
 	public static WebDriver driver;
-	MongoCollection<Document> webCollection;
-	public static Document d1;
+	//MongoCollection<Document> webCollection;
+	//public static Document d1;
 
 	ConfigReader reader = new ConfigReader();
 
-	@BeforeSuite
-	public void connectMongoDB() {
-		Logger mongoLogger = Logger.getLogger("org.mongodb.driver");
-		MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
-		MongoDatabase database = mongoClient.getDatabase("autoDB");
-
-		// create Collection
-		database.getCollection("web").drop();
-		webCollection = database.getCollection("web");
-        
-	}
+	/*
+	 * @BeforeSuite public void connectMongoDB() { Logger mongoLogger =
+	 * Logger.getLogger("org.mongodb.driver"); MongoClient mongoClient =
+	 * MongoClients.create("mongodb://localhost:27017"); MongoDatabase database =
+	 * mongoClient.getDatabase("autoDB");
+	 * 
+	 * // create Collection database.getCollection("web").drop(); webCollection =
+	 * database.getCollection("web");
+	 * 
+	 * }
+	 */
 
 	@BeforeMethod
 	public void setup() {

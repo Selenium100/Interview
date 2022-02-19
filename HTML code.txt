@@ -1,0 +1,44 @@
+var express = require('express'); 
+var app = express();
+var MongoClient = require('mongodb').MongoClient;
+const dburl = 'mongodb://localhost:27017'; 
+const dbname = 'autoDB'; 
+const collname = 'web';
+
+ app.get('/', function(req, res) {
+
+ MongoClient.connect(dburl, function(err, client) { 
+
+if (!err) {
+
+  const db = client.db(dbname);
+
+  const collection = db.collection(collname);
+
+  collection.find({}).toArray(function(err, todos) {
+    if (!err) {
+
+      // write HTML output
+      var output = '<html><header><title>Automation Report</title></header><body>';
+      output += '<h1>My Test Automation Live Report</h1>';
+      output += '<table border="1"><tr> <td><b>' + 'Method Name' + '</b></td> <td><b>' + 'Class Name' + '</b></td> <td><b>' + 'Status' + '</b>   </td></tr>';
+
+      // process todo list
+      todos.forEach(function(todo){
+        output += '<tr><td>' + todo.methodName + '</td><td>' + todo.className + '</td><td>' + todo.status + '</td></tr>';
+      });
+
+      // write HTML output (ending)
+      output += '</table></body></html>'
+
+      // send output back
+      res.send(output);
+
+      // log data to the console as well
+      console.log(todos);
+    }
+  });
+
+  // close db client
+  client.close();
+}
