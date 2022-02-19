@@ -1,6 +1,7 @@
 package com.test.com;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -17,8 +18,8 @@ public class TestingApp extends BaseClass {
 	
 	
 	
-	@Test
-	public void titleTest() {
+	@Test(dataProvider="data")
+	public void titleTest(String firstname,String lastname,String email,String phone,String password,String confirmpassword) {
 		
 		HomePage homePage=new HomePage(driver);
 		homePage.verifyTitle(driver);
@@ -29,12 +30,12 @@ public class TestingApp extends BaseClass {
 		homePage.clickRegistor();
 		
 		RegisterAccountPage account=new RegisterAccountPage(driver);
-		account.enterFirstName(reader.getFirstName());
-		account.enterLastName(reader.getLastName());
-		account.enterEmail(reader.getemail());
-		account.enterTelephone(reader.getphone());
-		account.enterPassword(reader.getpassword());
-		account.enterConfirmPassword(reader.getConfirmpassword());
+		account.enterFirstName(firstname);
+		account.enterLastName(lastname);
+		account.enterEmail(email);
+		account.enterTelephone(phone);
+		account.enterPassword(password);
+		account.enterConfirmPassword(confirmpassword);
 		account.clickContinue();
 		account.checkErrormessage();
 		account.clickAgree();
@@ -57,6 +58,13 @@ public class TestingApp extends BaseClass {
 		accountPage.clickLogOutBtn();
 		
 		
+	}
+	
+	@DataProvider(name="data")
+	public Object[][] getdata() throws Exception{
+		
+		Object[][] data= utils.getTableArray();
+		return data;
 	}
 	
 	
