@@ -71,9 +71,7 @@ public class TestingApp extends BaseClass {
 		accountPage.clickAccountBtn();
 		accountPage.clickLogOutBtn();
 		
-		List<Document> docList = new ArrayList<>();
-		docList.add(d1);
-		webCollection.insertMany(docList);
+		
 
 	}
 
