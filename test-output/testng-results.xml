@@ -1,282 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="15736" started-at="2022-02-19T04:18:05Z" finished-at="2022-02-19T04:18:21Z">
-=======
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="14070" started-at="2022-02-19T09:16:34Z" finished-at="2022-02-19T09:16:48Z">
+  <suite name="Default suite" duration-ms="35082" started-at="2022-02-19T14:29:53Z" finished-at="2022-02-19T14:30:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14070" started-at="2022-02-19T09:16:34Z" finished-at="2022-02-19T09:16:48Z">
-      <class name="com.test.com.TestingApp">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.com.TestingApp@456d6c1e]" name="setup" is-config="true" duration-ms="3434" started-at="2022-02-19T09:16:34Z" finished-at="2022-02-19T09:16:37Z">
+    <test name="Default test" duration-ms="35082" started-at="2022-02-19T14:29:53Z" finished-at="2022-02-19T14:30:28Z">
+      <class name="com.test.com.AddToCartTest">
+        <test-method status="PASS" signature="connectMongoDB()[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="connectMongoDB" is-config="true" duration-ms="392" started-at="2022-02-19T14:29:53Z" finished-at="2022-02-19T14:29:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectMongoDB -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="setup" is-config="true" duration-ms="3455" started-at="2022-02-19T14:29:54Z" finished-at="2022-02-19T14:29:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@456d6c1e]" name="titleTest" duration-ms="2899" started-at="2022-02-19T09:16:37Z" data-provider="data" finished-at="2022-02-19T09:16:40Z">
+        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="AddProductToCart" duration-ms="30669" started-at="2022-02-19T14:29:58Z" data-provider="data" finished-at="2022-02-19T14:30:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Nitya]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ranjan]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[nityaranjan1906453@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[7303709376]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Atmosol]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Atmosol]]>
+                <![CDATA[MacBook]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Your Account Has Been Created!']"}
-  (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'W00000PC1FM434', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\d955012\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54539}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 234ee846b28ebfe7e97406240da92649
-*** Element info: {Using=xpath, value=//h1[text()='Your Account Has Been Created!']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Your Account Has Been Created!']"}
-  (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'W00000PC1FM434', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\d955012\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54539}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 234ee846b28ebfe7e97406240da92649
-*** Element info: {Using=xpath, value=//h1[text()='Your Account Has Been Created!']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.getText(Unknown Source)
-at com.pages.com.RegisterAccountPage.SuccessMessageValidate(RegisterAccountPage.java:106)
-at com.test.com.TestingApp.titleTest(TestingApp.java:43)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.TestingApp@456d6c1e]" name="teardown" is-config="true" duration-ms="1245" started-at="2022-02-19T09:16:40Z" finished-at="2022-02-19T09:16:42Z">
+        </test-method> <!-- AddProductToCart -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="teardown" is-config="true" duration-ms="4" started-at="2022-02-19T14:30:28Z" finished-at="2022-02-19T14:30:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=titleTest status=FAILURE method=TestingApp.titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@456d6c1e] output={null}]]]>
+                <![CDATA[[TestResult name=AddProductToCart status=SUCCESS method=AddToCartTest.AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@6d2a209c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.com.TestingApp@456d6c1e]" name="setup" is-config="true" duration-ms="3064" started-at="2022-02-19T09:16:42Z" finished-at="2022-02-19T09:16:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@456d6c1e]" name="titleTest" duration-ms="2061" started-at="2022-02-19T09:16:45Z" data-provider="data" finished-at="2022-02-19T09:16:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Abhay]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Kumar]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abhay4563@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[3234556754]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Atmosol]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Atmosol]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Your Account Has Been Created!']"}
-  (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'W00000PC1FM434', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\d955012\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e114e1eed4946e0e1100dc243d97d1ec
-*** Element info: {Using=xpath, value=//h1[text()='Your Account Has Been Created!']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Your Account Has Been Created!']"}
-  (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'W00000PC1FM434', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\d955012\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e114e1eed4946e0e1100dc243d97d1ec
-*** Element info: {Using=xpath, value=//h1[text()='Your Account Has Been Created!']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.getText(Unknown Source)
-at com.pages.com.RegisterAccountPage.SuccessMessageValidate(RegisterAccountPage.java:106)
-at com.test.com.TestingApp.titleTest(TestingApp.java:43)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.TestingApp@456d6c1e]" name="teardown" is-config="true" duration-ms="1289" started-at="2022-02-19T09:16:47Z" finished-at="2022-02-19T09:16:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=titleTest status=FAILURE method=TestingApp.titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@456d6c1e] output={null}]]]>
-=======
-  <suite name="Default suite" duration-ms="10946" started-at="2022-02-17T17:24:52Z" finished-at="2022-02-17T17:25:03Z">
->>>>>>> 4c0a6fbfe79dce099c6b55bf6701e52ea160a2f2
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="15736" started-at="2022-02-19T04:18:05Z" finished-at="2022-02-19T04:18:21Z">
-      <class name="com.test.com.TestingApp">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.com.TestingApp@5276e6b0]" name="setup" is-config="true" duration-ms="8165" started-at="2022-02-19T04:18:06Z" finished-at="2022-02-19T04:18:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="titleTest()[pri:0, instance:com.test.com.TestingApp@5276e6b0]" name="titleTest" duration-ms="6149" started-at="2022-02-19T04:18:14Z" finished-at="2022-02-19T04:18:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.TestingApp@5276e6b0]" name="teardown" is-config="true" duration-ms="959" started-at="2022-02-19T04:18:20Z" finished-at="2022-02-19T04:18:21Z">
-          <params>
-            <param index="0">
-              <value>
-<<<<<<< HEAD
-                <![CDATA[[TestResult name=titleTest status=SUCCESS method=TestingApp.titleTest()[pri:0, instance:com.test.com.TestingApp@5276e6b0] output={null}]]]>
-=======
-                <![CDATA[[TestResult name=titleTest status=SUCCESS method=TestingApp.titleTest()[pri:0, instance:com.test.com.TestingApp@12b0404f] output={null}]]]>
->>>>>>> 3ca893093fa24ac6a4f4f12fb2984ae825b2278b
->>>>>>> 4c0a6fbfe79dce099c6b55bf6701e52ea160a2f2
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.test.com.TestingApp -->
+      </class> <!-- com.test.com.AddToCartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

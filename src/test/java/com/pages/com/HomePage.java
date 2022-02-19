@@ -1,5 +1,6 @@
 package com.pages.com;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,6 +31,9 @@ public class HomePage {
 
 	@FindBy(xpath = "//a[text()='Register']")
 	WebElement register;
+	
+	@FindBy(xpath="//input[@name='search']")
+	WebElement searchbar;
 
 	public void verifyTitle(WebDriver driver) {
 
@@ -62,6 +66,11 @@ public class HomePage {
 
 	public void clickMyaccount() {
 		myaccount.click();
+	}
+	
+	public void enterOnSearchBar(String text) {
+		searchbar.sendKeys(text);
+		searchbar.sendKeys(Keys.ENTER);
 	}
 
 }

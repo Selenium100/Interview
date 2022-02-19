@@ -1,5 +1,6 @@
 package com.test.com;
 
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 import org.bson.Document;
@@ -25,10 +26,10 @@ public class BaseClass {
 	public static WebDriver driver;
 
 	ConfigReader reader = new ConfigReader();
-	ExcelUtils utils = new ExcelUtils("./datalist.xlsx", "Sheet1");
+	//ExcelUtils utils = new ExcelUtils("./datalist.xlsx", "Sheet1");
 
 	MongoCollection<Document> webCollection;
-	public static Document d1;
+	//public static Document d1;
 
 	@BeforeMethod
 	public void setup() {
@@ -37,6 +38,7 @@ public class BaseClass {
 		driver = new ChromeDriver();
 		driver.get(reader.getAppUrl());
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}
 
@@ -46,8 +48,8 @@ public class BaseClass {
 		MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
 		MongoDatabase database = mongoClient.getDatabase("autoDB");
 
-		// create Collection database.getCollection("web").drop(); webCollection =
-		database.getCollection("web");
+		 database.getCollection("web").drop(); 
+		 webCollection =database.getCollection("web");
 
 	}
 
@@ -59,7 +61,7 @@ public class BaseClass {
 			Utility.takescreenshot(driver);
 		}
 
-		driver.quit();
+		//driver.quit();
 	}
 
 }

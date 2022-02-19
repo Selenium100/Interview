@@ -1,44 +1,52 @@
-var express = require('express'); 
-var app = express();
-var MongoClient = require('mongodb').MongoClient;
-const dburl = 'mongodb://localhost:27017'; 
-const dbname = 'autoDB'; 
-const collname = 'web';
+const express= require('express')
+const MongoClient= require('mongodb').MongoClient
 
- app.get('/', function(req, res) {
 
- MongoClient.connect(dburl, function(err, client) { 
+const app=express()
+app.use(express.json())
+var database
 
-if (!err) {
+app.get('/' , (req,resp) =>{
 
-  const db = client.db(dbname);
+  resp.send('Welcome to MongoDb!!')
+})
 
-  const collection = db.collection(collname);
 
-  collection.find({}).toArray(function(err, todos) {
-    if (!err) {
-
-      // write HTML output
+app.get('/autoDB/web' , (req,resp) =>{
+    database.collection('web').find({}).toArray((err, result) =>{
+        if(err) throw err
+        // write HTML output
       var output = '<html><header><title>Automation Report</title></header><body>';
       output += '<h1>My Test Automation Live Report</h1>';
       output += '<table border="1"><tr> <td><b>' + 'Method Name' + '</b></td> <td><b>' + 'Class Name' + '</b></td> <td><b>' + 'Status' + '</b>   </td></tr>';
 
       // process todo list
-      todos.forEach(function(todo){
-        output += '<tr><td>' + todo.methodName + '</td><td>' + todo.className + '</td><td>' + todo.status + '</td></tr>';
+      result.forEach(function(result){
+        output += '<tr><td>' + result.methodName + '</td><td>' + result.className + '</td><td>' + result.status + '</td></tr>';
       });
 
       // write HTML output (ending)
       output += '</table></body></html>'
 
       // send output back
-      res.send(output);
+      resp.send(output);
 
-      // log data to the console as well
-      console.log(todos);
-    }
-  });
+      
+    })
 
-  // close db client
-  client.close();
-}
+})
+
+app.listen(4040, () => {
+ 
+  MongoClient.connect('mongodb://localhost:27017' , {useNewUrlParser: true}, (error,result) =>{
+
+  if(error) throw error
+  database=result.db('autoDB')
+  console.log('connection successful!!')
+
+
+  })
+
+
+
+})
