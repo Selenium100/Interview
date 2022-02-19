@@ -5,6 +5,7 @@
     <classes>
       <class name="com.test.com.TestingApp">
         <methods>
+          <include name="connectMongoDB"/>
           <include name="teardown"/>
           <include name="setup"/>
           <include name="titleTest"/>
