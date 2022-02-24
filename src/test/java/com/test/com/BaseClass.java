@@ -48,7 +48,7 @@ public class BaseClass {
 		MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
 		MongoDatabase database = mongoClient.getDatabase("autoDB");
 
-		 database.getCollection("web").drop(); 
+		 //database.getCollection("web").drop(); 
 		 webCollection =database.getCollection("web");
 
 	}

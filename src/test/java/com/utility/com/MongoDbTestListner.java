@@ -75,7 +75,7 @@ public class MongoDbTestListner implements ITestListener {
 		Logger mongoLogger=Logger.getLogger("org.mongodb.driver");
 		mongoClient=MongoClients.create("mongodb://localhost:27017");  
 		MongoDatabase database= mongoClient.getDatabase("autoDB");
-		database.getCollection("web").drop();
+		//database.getCollection("web").drop();
 		webCollection= database.getCollection("web");
 		
 		

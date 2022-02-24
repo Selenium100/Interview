@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35082" started-at="2022-02-19T14:29:53Z" finished-at="2022-02-19T14:30:28Z">
+  <suite name="Default suite" duration-ms="6148" started-at="2022-02-22T14:08:15Z" finished-at="2022-02-22T14:08:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35082" started-at="2022-02-19T14:29:53Z" finished-at="2022-02-19T14:30:28Z">
+    <test name="Default test" duration-ms="6148" started-at="2022-02-22T14:08:15Z" finished-at="2022-02-22T14:08:21Z">
       <class name="com.test.com.AddToCartTest">
-        <test-method status="PASS" signature="connectMongoDB()[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="connectMongoDB" is-config="true" duration-ms="392" started-at="2022-02-19T14:29:53Z" finished-at="2022-02-19T14:29:53Z">
+        <test-method status="PASS" signature="connectMongoDB()[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="connectMongoDB" is-config="true" duration-ms="266" started-at="2022-02-22T14:08:15Z" finished-at="2022-02-22T14:08:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectMongoDB -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="setup" is-config="true" duration-ms="3455" started-at="2022-02-19T14:29:54Z" finished-at="2022-02-19T14:29:58Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="setup" is-config="true" duration-ms="4150" started-at="2022-02-22T14:08:16Z" finished-at="2022-02-22T14:08:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="AddProductToCart" duration-ms="30669" started-at="2022-02-19T14:29:58Z" data-provider="data" finished-at="2022-02-19T14:30:28Z">
+        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="AddProductToCart" duration-ms="970" started-at="2022-02-22T14:08:20Z" data-provider="data" finished-at="2022-02-22T14:08:21Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductToCart -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="teardown" is-config="true" duration-ms="4" started-at="2022-02-19T14:30:28Z" finished-at="2022-02-19T14:30:28Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="teardown" is-config="true" duration-ms="1" started-at="2022-02-22T14:08:21Z" finished-at="2022-02-22T14:08:21Z">
           <params>
             <param index="0">
               <value>

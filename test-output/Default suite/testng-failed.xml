@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.com.TestingApp">
+      <class name="com.test.com.AddToCartTest">
         <methods>
           <include name="connectMongoDB"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="titleTest" invocation-numbers="0 1"/>
+          <include name="AddProductToCart" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.test.com.TestingApp -->
+      </class> <!-- com.test.com.AddToCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

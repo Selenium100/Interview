@@ -16,3 +16,6 @@ app.listen(3000, () => console.log('Example app listening on port 3000!!'))
 
 
 8. open 3000 port to see result
+
+
+http://localhost:4040/autoDB/web   -- where i can see results

@@ -8,6 +8,7 @@ import java.util.logging.FileHandler;
 
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -36,6 +37,13 @@ public interface Utility  {
 		} catch (Exception e) {
 			e.getMessage();
 		}
+		
+	}
+	
+	static void scrollDown(WebDriver driver) {
+		
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 		
 	}
 
