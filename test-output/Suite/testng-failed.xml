@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="com.utility.com.MongoDbTestListner"/>
   </listeners>
-  <test thread-count="5" name="Test2(failed)">
+  <test thread-count="5" verbose="3" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="windows 10"/>
     <classes>
-      <class name="com.test.com.AddToCartTest">
+      <class name="com.test.com.TestingApp">
         <methods>
           <include name="connectMongoDB"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="AddProductToCart" invocation-numbers="0"/>
+          <include name="titleTest" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.test.com.AddToCartTest -->
+      </class> <!-- com.test.com.TestingApp -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

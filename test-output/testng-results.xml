@@ -1,21 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6148" started-at="2022-02-22T14:08:15Z" finished-at="2022-02-22T14:08:21Z">
+  <suite name="Suite" duration-ms="31555" started-at="2022-02-24T14:01:28Z" finished-at="2022-02-24T14:02:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6148" started-at="2022-02-22T14:08:15Z" finished-at="2022-02-22T14:08:21Z">
-      <class name="com.test.com.AddToCartTest">
-        <test-method status="PASS" signature="connectMongoDB()[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="connectMongoDB" is-config="true" duration-ms="266" started-at="2022-02-22T14:08:15Z" finished-at="2022-02-22T14:08:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectMongoDB -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="setup" is-config="true" duration-ms="4150" started-at="2022-02-22T14:08:16Z" finished-at="2022-02-22T14:08:20Z">
+    <test name="Test" duration-ms="21141" started-at="2022-02-24T14:01:28Z" finished-at="2022-02-24T14:01:50Z">
+      <class name="com.test.com.TestingApp">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="setup" is-config="true" duration-ms="4807" started-at="2022-02-24T14:01:29Z" finished-at="2022-02-24T14:01:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.test.com.TestingApp.titleTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="AddProductToCart" duration-ms="970" started-at="2022-02-22T14:08:20Z" data-provider="data" finished-at="2022-02-22T14:08:21Z">
+        <test-method status="PASS" signature="titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="titleTest" duration-ms="5406" started-at="2022-02-24T14:01:34Z" data-provider="data" finished-at="2022-02-24T14:01:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nitya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranjan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nityaranjn78977344643@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[7303709376]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Atmosol]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Atmosol]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="teardown" is-config="true" duration-ms="839" started-at="2022-02-24T14:01:40Z" finished-at="2022-02-24T14:01:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=titleTest status=SUCCESS method=TestingApp.titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@778d1062] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="setup" is-config="true" duration-ms="2936" started-at="2022-02-24T14:01:40Z" finished-at="2022-02-24T14:01:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.test.com.TestingApp.titleTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="titleTest" duration-ms="5295" started-at="2022-02-24T14:01:43Z" data-provider="data" finished-at="2022-02-24T14:01:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abhay]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kumar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abh0906536897454546@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3234556754]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Atmosol]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Atmosol]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="teardown" is-config="true" duration-ms="810" started-at="2022-02-24T14:01:49Z" finished-at="2022-02-24T14:01:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=titleTest status=SUCCESS method=TestingApp.titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@778d1062] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.com.TestingApp -->
+    </test> <!-- Test -->
+    <test name="Test2" duration-ms="10366" started-at="2022-02-24T14:01:50Z" finished-at="2022-02-24T14:02:00Z">
+      <class name="com.test.com.AddToCartTest">
+        <test-method status="PASS" signature="connectMongoDB()[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="connectMongoDB" is-config="true" duration-ms="282" started-at="2022-02-24T14:01:28Z" finished-at="2022-02-24T14:01:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectMongoDB -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="setup" is-config="true" duration-ms="8190" started-at="2022-02-24T14:01:50Z" finished-at="2022-02-24T14:01:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.test.com.AddToCartTest.AddProductToCart(java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="AddProductToCart" duration-ms="547" started-at="2022-02-24T14:01:58Z" data-provider="data" finished-at="2022-02-24T14:01:58Z">
           <params>
             <param index="0">
               <value>
@@ -26,11 +183,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductToCart -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.AddToCartTest@6d2a209c]" name="teardown" is-config="true" duration-ms="1" started-at="2022-02-22T14:08:21Z" finished-at="2022-02-22T14:08:21Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="teardown" is-config="true" duration-ms="1529" started-at="2022-02-24T14:01:58Z" finished-at="2022-02-24T14:02:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddProductToCart status=SUCCESS method=AddToCartTest.AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@6d2a209c] output={null}]]]>
+                <![CDATA[[TestResult name=AddProductToCart status=SUCCESS method=AddToCartTest.AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@6af93788] output={null}]]]>
               </value>
             </param>
           </params>
@@ -38,6 +195,6 @@
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.test.com.AddToCartTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>

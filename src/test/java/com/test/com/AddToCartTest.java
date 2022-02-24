@@ -21,7 +21,7 @@ public class AddToCartTest extends BaseClass{
 		
 		ProductSearchPage productSearchPage=new ProductSearchPage(driver);
 		 
-		;
+		
 		productSearchPage.getProductListandClick();
 		//productSearchPage.clickReviewButton();
 		
