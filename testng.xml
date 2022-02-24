@@ -6,7 +6,7 @@
 </listeners>
 	<test thread-count="5" name="Test">
 <parameter name="browser" value="chrome"></parameter>
-<parameter name="platform" value="windows 10"></parameter>
+<parameter name="platform" value="macOS 10.15"></parameter>
 		<classes>
 
 			<class name="com.test.com.TestingApp" />

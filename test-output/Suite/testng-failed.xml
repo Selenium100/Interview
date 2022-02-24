@@ -6,7 +6,7 @@
   </listeners>
   <test thread-count="5" verbose="3" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
-    <parameter name="platform" value="windows 10"/>
+    <parameter name="platform" value="macOS 10.15"/>
     <classes>
       <class name="com.test.com.TestingApp">
         <methods>
