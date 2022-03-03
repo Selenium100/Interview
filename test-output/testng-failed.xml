@@ -8,14 +8,14 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="platform" value="macOS 10.15"/>
     <classes>
-      <class name="com.test.com.TestingApp">
+      <class name="com.test.com.E2EFlowTest">
         <methods>
+          <include name="titleTest" invocation-numbers="0 1"/>
           <include name="connectMongoDB"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="titleTest" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.test.com.TestingApp -->
+      </class> <!-- com.test.com.E2EFlowTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

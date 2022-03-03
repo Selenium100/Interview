@@ -23,26 +23,34 @@ import com.utility.com.ExcelUtils;
 import com.utility.com.MongoDbTestListner;
 
 //@Listeners(MongoDbTestListner.class)
-public class TestingApp extends BaseClass {
+public class E2EFlowTest extends BaseClass {
 
 
 	
 	
 	
 	@Test(dataProvider="data")
-	public void titleTest(String firstname,String lastname,String email,String phone,String password,String confirmpassword) {
+	public void titleTest(String firstname,String lastname,String email,String phone,String password,String confirmpassword) throws InterruptedException {
 
 
 		HomePage homePage = new HomePage(driver);
 
 
 		homePage.verifyTitle(driver);
-
+		Thread.sleep(4000);
+		//homePage.mouseHoverDesktopLink(action);
+		Thread.sleep(4000);
+		
+		homePage.dragAndDrop(action);
+		Thread.sleep(4000);
 		homePage.clickComponent();
 		homePage.clickMonitor();
+		Thread.sleep(4000);
+		
 		homePage.clickMyaccount();
+		Thread.sleep(4000);
 		homePage.clickRegistor();
-
+		Thread.sleep(4000);
 
 		
 		RegisterAccountPage account=new RegisterAccountPage(driver);
@@ -69,7 +77,8 @@ public class TestingApp extends BaseClass {
 		changePassword.enterChangePassword(reader.getChangepassword());
 		changePassword.enterConfirmChangePassword(reader.getConfirmChangepassword());
 		changePassword.clickContinue();
-
+        
+		
 		accountPage.clickAccountBtn();
 		accountPage.clickLogOutBtn();
 

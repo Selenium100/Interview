@@ -10,6 +10,7 @@ import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
@@ -31,6 +32,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 
 	public static WebDriver driver;
+	public static Actions action;
 	String flag="remote";
 
 	ConfigReader reader = new ConfigReader();
@@ -47,7 +49,7 @@ public class BaseClass {
         String methodName=name.getName();
 		
 		
-		
+		//Code for run TCs on SauceLab
 		MutableCapabilities sauceLabs = new MutableCapabilities();
 		sauceLabs.setCapability("name", methodName);
 		sauceLabs.setCapability("build", "Java-W3C-Examples");

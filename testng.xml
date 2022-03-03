@@ -9,7 +9,7 @@
 <parameter name="platform" value="macOS 10.15"></parameter>
 		<classes>
 
-			<class name="com.test.com.TestingApp" />
+			<class name="com.test.com.E2EFlowTest" />
 		</classes>
 	</test> <!-- Test -->
 	<test thread-count="5" name="Test2">

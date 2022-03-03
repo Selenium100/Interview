@@ -12,6 +12,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public interface Utility  {
 	
@@ -45,6 +47,18 @@ public interface Utility  {
 		JavascriptExecutor js=((JavascriptExecutor)driver);
 		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 		
+	}
+	
+	static void mouseHover(WebDriver driver,WebElement ele, Actions action) {
+		
+		action=new Actions(driver);
+		action.moveToElement(ele).build().perform();
+	}
+	
+	static void dragAndDrop(WebDriver driver,WebElement source, WebElement target, Actions action) {
+		
+		action=new Actions(driver);
+		action.clickAndHold(source).moveToElement(target).release().build().perform();
 	}
 
 }

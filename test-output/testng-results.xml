@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="115341" started-at="2022-02-24T16:58:58Z" finished-at="2022-02-24T17:00:53Z">
+  <suite name="Suite" duration-ms="151932" started-at="2022-03-03T14:17:25Z" finished-at="2022-03-03T14:19:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="93206" started-at="2022-02-24T16:58:58Z" finished-at="2022-02-24T17:00:31Z">
-      <class name="com.test.com.TestingApp">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="setup" is-config="true" duration-ms="12050" started-at="2022-02-24T16:58:59Z" finished-at="2022-02-24T16:59:11Z">
+    <test name="Test" duration-ms="125473" started-at="2022-03-03T14:17:25Z" finished-at="2022-03-03T14:19:30Z">
+      <class name="com.test.com.E2EFlowTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.test.com.E2EFlowTest@778d1062]" name="setup" is-config="true" duration-ms="12407" started-at="2022-03-03T14:17:26Z" finished-at="2022-03-03T14:17:38Z">
           <params>
             <param index="0">
               <value>
@@ -21,14 +21,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[public void com.test.com.TestingApp.titleTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+                <![CDATA[public void com.test.com.E2EFlowTest.titleTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="titleTest" duration-ms="33389" started-at="2022-02-24T16:59:11Z" data-provider="data" finished-at="2022-02-24T16:59:45Z">
+        <test-method status="FAIL" signature="titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.E2EFlowTest@778d1062]" name="titleTest" duration-ms="45557" started-at="2022-03-03T14:17:38Z" data-provider="data" finished-at="2022-03-03T14:18:24Z">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[nityaranjn7897344643@gmail.com]]>
+                <![CDATA[nityaranjn55623@gmail.com]]>
               </value>
             </param>
             <param index="3">
@@ -68,8 +68,8 @@
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-35LE3N1', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/qv/8dr6ylkn3c9...}, goog:chromeOptions: {debuggerAddress: localhost:49194}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: edb56bf100914b6f945b98105d9f751b]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/qv/8dr6ylkn3c9...}, goog:chromeOptions: {debuggerAddress: localhost:49200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a3d949075a149579dc73d7ea4524cc6]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -77,8 +77,8 @@ Session ID: edb56bf100914b6f945b98105d9f751b]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-35LE3N1', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/qv/8dr6ylkn3c9...}, goog:chromeOptions: {debuggerAddress: localhost:49194}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: edb56bf100914b6f945b98105d9f751b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/qv/8dr6ylkn3c9...}, goog:chromeOptions: {debuggerAddress: localhost:49200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a3d949075a149579dc73d7ea4524cc6
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -96,8 +96,8 @@ at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at com.pages.com.HomePage.clickMyaccount(HomePage.java:68)
-at com.test.com.TestingApp.titleTest(TestingApp.java:43)
+at com.pages.com.HomePage.clickMonitor(HomePage.java:70)
+at com.test.com.E2EFlowTest.titleTest(E2EFlowTest.java:47)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,18 +129,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="teardown" is-config="true" duration-ms="2047" started-at="2022-02-24T16:59:45Z" finished-at="2022-02-24T16:59:47Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.E2EFlowTest@778d1062]" name="teardown" is-config="true" duration-ms="2262" started-at="2022-03-03T14:18:24Z" finished-at="2022-03-03T14:18:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=titleTest status=FAILURE method=TestingApp.titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@778d1062] output={null}]]]>
+                <![CDATA[[TestResult name=titleTest status=FAILURE method=E2EFlowTest.titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.E2EFlowTest@778d1062] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="setup" is-config="true" duration-ms="9720" started-at="2022-02-24T16:59:47Z" finished-at="2022-02-24T16:59:57Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.test.com.E2EFlowTest@778d1062]" name="setup" is-config="true" duration-ms="11446" started-at="2022-03-03T14:18:26Z" finished-at="2022-03-03T14:18:38Z">
           <params>
             <param index="0">
               <value>
@@ -154,14 +154,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="2">
               <value>
-                <![CDATA[public void com.test.com.TestingApp.titleTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+                <![CDATA[public void com.test.com.E2EFlowTest.titleTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="titleTest" duration-ms="32909" started-at="2022-02-24T16:59:57Z" data-provider="data" finished-at="2022-02-24T17:00:29Z">
+        <test-method status="FAIL" signature="titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.E2EFlowTest@778d1062]" name="titleTest" duration-ms="49197" started-at="2022-03-03T14:18:38Z" data-provider="data" finished-at="2022-03-03T14:19:27Z">
           <params>
             <param index="0">
               <value>
@@ -175,7 +175,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="2">
               <value>
-                <![CDATA[abh090653687454546@gmail.com]]>
+                <![CDATA[abh09082444@gmail.com]]>
               </value>
             </param>
             <param index="3">
@@ -201,8 +201,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-35LE3N1', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/qv/8dr6ylkn3c9...}, goog:chromeOptions: {debuggerAddress: localhost:49197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2e66096bf6c44a1dba2b587d76b1b422]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/qv/8dr6ylkn3c9...}, goog:chromeOptions: {debuggerAddress: localhost:49194}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2668286b39049568fcdf12f6104f60f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -210,8 +210,8 @@ Session ID: 2e66096bf6c44a1dba2b587d76b1b422]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-35LE3N1', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/qv/8dr6ylkn3c9...}, goog:chromeOptions: {debuggerAddress: localhost:49197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2e66096bf6c44a1dba2b587d76b1b422
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/qv/8dr6ylkn3c9...}, goog:chromeOptions: {debuggerAddress: localhost:49194}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2668286b39049568fcdf12f6104f60f
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -229,8 +229,8 @@ at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at com.pages.com.HomePage.clickMyaccount(HomePage.java:68)
-at com.test.com.TestingApp.titleTest(TestingApp.java:43)
+at com.pages.com.HomePage.clickMonitor(HomePage.java:70)
+at com.test.com.E2EFlowTest.titleTest(E2EFlowTest.java:47)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -262,26 +262,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.TestingApp@778d1062]" name="teardown" is-config="true" duration-ms="1807" started-at="2022-02-24T17:00:29Z" finished-at="2022-02-24T17:00:31Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.E2EFlowTest@778d1062]" name="teardown" is-config="true" duration-ms="3311" started-at="2022-03-03T14:19:27Z" finished-at="2022-03-03T14:19:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=titleTest status=FAILURE method=TestingApp.titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.TestingApp@778d1062] output={null}]]]>
+                <![CDATA[[TestResult name=titleTest status=FAILURE method=E2EFlowTest.titleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.com.E2EFlowTest@778d1062] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.test.com.TestingApp -->
+      </class> <!-- com.test.com.E2EFlowTest -->
     </test> <!-- Test -->
-    <test name="Test2" duration-ms="21987" started-at="2022-02-24T17:00:31Z" finished-at="2022-02-24T17:00:53Z">
+    <test name="Test2" duration-ms="26333" started-at="2022-03-03T14:19:30Z" finished-at="2022-03-03T14:19:57Z">
       <class name="com.test.com.AddToCartTest">
-        <test-method status="PASS" signature="connectMongoDB()[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="connectMongoDB" is-config="true" duration-ms="307" started-at="2022-02-24T16:58:58Z" finished-at="2022-02-24T16:58:58Z">
+        <test-method status="PASS" signature="connectMongoDB()[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="connectMongoDB" is-config="true" duration-ms="263" started-at="2022-03-03T14:17:25Z" finished-at="2022-03-03T14:17:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectMongoDB -->
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="setup" is-config="true" duration-ms="18628" started-at="2022-02-24T17:00:31Z" finished-at="2022-02-24T17:00:50Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="setup" is-config="true" duration-ms="22552" started-at="2022-03-03T14:19:31Z" finished-at="2022-03-03T14:19:53Z">
           <params>
             <param index="0">
               <value>
@@ -302,7 +302,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="AddProductToCart" duration-ms="2966" started-at="2022-02-24T17:00:50Z" data-provider="data" finished-at="2022-02-24T17:00:53Z">
+        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="AddProductToCart" duration-ms="3286" started-at="2022-03-03T14:19:53Z" data-provider="data" finished-at="2022-03-03T14:19:56Z">
           <params>
             <param index="0">
               <value>
@@ -313,7 +313,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductToCart -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="teardown" is-config="true" duration-ms="321" started-at="2022-02-24T17:00:53Z" finished-at="2022-02-24T17:00:53Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.AddToCartTest@6af93788]" name="teardown" is-config="true" duration-ms="371" started-at="2022-03-03T14:19:56Z" finished-at="2022-03-03T14:19:57Z">
           <params>
             <param index="0">
               <value>
