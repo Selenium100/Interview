@@ -1,0 +1,52 @@
+const express= require('express')
+const MongoClient= require('mongodb').MongoClient
+
+
+const app=express()
+app.use(express.json())
+var database
+
+app.get('/' , (req,resp) =>{
+
+  resp.send('Welcome to MongoDb!!')
+})
+
+
+app.get('/autoDB/web' , (req,resp) =>{
+    database.collection('web').find({}).toArray((err, result) =>{
+        if(err) throw err
+        // write HTML output
+      var output = '<html><header><title>Automation Report</title></header><body>';
+      output += '<h1>My Test Automation Live Report</h1>';
+      output += '<table border="1"><tr> <td><b>' + 'Method Name' + '</b></td> <td><b>' + 'Class Name' + '</b></td> <td><b>' + 'Status' + '</b>   </td></tr>';
+
+      // process todo list
+      result.forEach(function(result){
+        output += '<tr><td>' + result.methodName + '</td><td>' + result.className + '</td><td>' + result.status + '</td></tr>';
+      });
+
+      // write HTML output (ending)
+      output += '</table></body></html>'
+
+      // send output back
+      resp.send(output);
+
+      
+    })
+
+})
+
+app.listen(4040, () => {
+ 
+  MongoClient.connect('mongodb://localhost:27017' , {useNewUrlParser: true}, (error,result) =>{
+
+  if(error) throw error
+  database=result.db('autoDB')
+  console.log('connection successful!!')
+
+
+  })
+
+
+
+})

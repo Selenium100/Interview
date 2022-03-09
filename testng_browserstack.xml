@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BrowserStackSuite" thread-count="5" verbose="3" >
+<listeners>
+<listener class-name="com.utility.com.MongoDbTestListner"></listener>
+</listeners>
+	<test thread-count="5" name="WindowsTest">
+<parameter name="os" value="Windows"></parameter>
+<parameter name="os_version" value="10"></parameter>
+<parameter name="browser" value="Chrome"></parameter>
+<parameter name="browser_version" value="80.0"></parameter>
+		<classes>
+
+			<class name="com.test.com.E2EFlowTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="MacTest">
+<parameter name="os" value="OS X"></parameter>
+<parameter name="os_version" value="Catalina"></parameter>
+<parameter name="browser" value="Chrome"></parameter>
+<parameter name="browser_version" value="85.0"></parameter>
+		<classes>
+
+			<class name="com.test.com.AddToCartTest"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

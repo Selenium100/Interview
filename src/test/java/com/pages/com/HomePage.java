@@ -1,10 +1,17 @@
 package com.pages.com;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
+import com.utility.com.Utility;
 
 public class HomePage {
 
@@ -30,6 +37,13 @@ public class HomePage {
 
 	@FindBy(xpath = "//a[text()='Register']")
 	WebElement register;
+	
+	@FindBy(xpath="//input[@name='search']")
+	WebElement searchbar;
+	
+	@FindBy(xpath="//a[text()='Desktops']")
+	WebElement desktopLink;
+	
 
 	public void verifyTitle(WebDriver driver) {
 
@@ -62,6 +76,21 @@ public class HomePage {
 
 	public void clickMyaccount() {
 		myaccount.click();
+	}
+	
+	public void enterOnSearchBar(String text) {
+		searchbar.sendKeys(text);
+		searchbar.sendKeys(Keys.ENTER);
+	}
+	
+	public void mouseHoverDesktopLink(Actions action) {
+		
+		Utility.mouseHover(ldriver, desktopLink, action);
+	}
+	
+	public void dragAndDrop(Actions action) {
+		
+		Utility.dragAndDrop(ldriver, desktopLink, searchbar, action);
 	}
 
 }

@@ -1,6 +1,10 @@
 package com.test.com;
 
 
+
+import org.testng.annotations.Listeners;
+
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
@@ -15,33 +19,38 @@ import com.pages.com.AccountPage;
 import com.pages.com.ChangePasswordPage;
 import com.pages.com.HomePage;
 import com.pages.com.RegisterAccountPage;
+import com.utility.com.ExcelUtils;
+import com.utility.com.MongoDbTestListner;
 
-public class TestingApp extends BaseClass {
+//@Listeners(MongoDbTestListner.class)
+public class E2EFlowTest extends BaseClassBrowerStack {
 
 
 	
 	
 	
 	@Test(dataProvider="data")
-	public void titleTest(String firstname,String lastname,String email,String phone,String password,String confirmpassword) {
+	public void titleTest(String firstname,String lastname,String email,String phone,String password,String confirmpassword) throws InterruptedException {
 
 
 		HomePage homePage = new HomePage(driver);
-		String title = homePage.getTitle();
-		String currentUrl = homePage.getCurrentUrl();
-		d1 = new Document();
-		d1.append("title", title);
-		d1.append("currentUrl", currentUrl);
 
 
-		
-		
 		homePage.verifyTitle(driver);
-
+		Thread.sleep(4000);
+		//homePage.mouseHoverDesktopLink(action);
+		Thread.sleep(4000);
+		
+		homePage.dragAndDrop(action);
+		Thread.sleep(4000);
 		homePage.clickComponent();
 		homePage.clickMonitor();
+		Thread.sleep(4000);
+		
 		homePage.clickMyaccount();
+		Thread.sleep(4000);
 		homePage.clickRegistor();
+		Thread.sleep(4000);
 
 		
 		RegisterAccountPage account=new RegisterAccountPage(driver);
@@ -51,6 +60,7 @@ public class TestingApp extends BaseClass {
 		account.enterTelephone(phone);
 		account.enterPassword(password);
 		account.enterConfirmPassword(confirmpassword);
+
 
 		account.clickContinue();
 		account.checkErrormessage();
@@ -67,11 +77,11 @@ public class TestingApp extends BaseClass {
 		changePassword.enterChangePassword(reader.getChangepassword());
 		changePassword.enterConfirmChangePassword(reader.getConfirmChangepassword());
 		changePassword.clickContinue();
-
+        
+		
 		accountPage.clickAccountBtn();
 		accountPage.clickLogOutBtn();
-		
-		
+
 
 	}
 
@@ -79,6 +89,7 @@ public class TestingApp extends BaseClass {
 	@DataProvider(name="data")
 	public Object[][] getdata() throws Exception{
 		
+		ExcelUtils utils = new ExcelUtils("./datalist.xlsx", "Sheet1");
 		Object[][] data= utils.getTableArray();
 		return data;
 	}
