@@ -37,6 +37,8 @@ public class BaseClass {
 	public WebDriver driver;
 	public static Actions action;
 	String flag="remote";
+	
+	//changed by Abhay
 
 	ConfigReader reader = new ConfigReader();
 	// ExcelUtils utils = new ExcelUtils("./datalist.xlsx", "Sheet1");
@@ -66,6 +68,8 @@ public class BaseClass {
 		cap.setCapability("platformName", platformName);
 
 		if (flag.equalsIgnoreCase("remote")) {
+			
+			//changed by Abhay
 
 			if (browerName.equalsIgnoreCase("chrome")) {
 
