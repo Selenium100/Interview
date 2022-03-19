@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.utility.com.Test">
+      <class name="com.test.com.AddToCartTest">
         <methods>
-          <include name="clickMaxPrice"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="AddProductToCart"/>
         </methods>
-      </class> <!-- com.utility.com.Test -->
+      </class> <!-- com.test.com.AddToCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
