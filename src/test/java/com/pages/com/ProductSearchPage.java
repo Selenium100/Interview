@@ -44,7 +44,7 @@ public class ProductSearchPage {
 
 		System.out.println(textList.size());
 
-		textList.stream().forEach(i ->System.out.println( i.getText())); 
+		//textList.stream().forEach(i ->System.out.println( i.getText())); 
 		
 		
 		

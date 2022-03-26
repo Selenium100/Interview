@@ -4,6 +4,7 @@ import java.io.File;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.function.Function;
 import java.util.logging.FileHandler;
 
 
@@ -46,6 +47,7 @@ public interface Utility  {
 		
 		JavascriptExecutor js=((JavascriptExecutor)driver);
 		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		 
 		
 	}
 	

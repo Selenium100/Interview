@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10142" started-at="2022-03-19T16:16:39Z" finished-at="2022-03-19T16:16:49Z">
+  <suite name="Suite" duration-ms="12112" started-at="2022-03-20T08:10:24Z" finished-at="2022-03-20T08:10:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="6954" started-at="2022-03-19T16:16:39Z" finished-at="2022-03-19T16:16:46Z">
+    <test name="Test" duration-ms="6919" started-at="2022-03-20T08:10:24Z" finished-at="2022-03-20T08:10:31Z">
       <class name="com.test.com.AddToCartTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@20d28811]" name="setup" is-config="true" duration-ms="4395" started-at="2022-03-19T16:16:40Z" finished-at="2022-03-19T16:16:44Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@60d8c9b7]" name="setup" is-config="true" duration-ms="5382" started-at="2022-03-20T08:10:25Z" finished-at="2022-03-20T08:10:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@20d28811]" name="AddProductToCart" duration-ms="663" started-at="2022-03-19T16:16:44Z" data-provider="data" finished-at="2022-03-19T16:16:45Z">
+        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@60d8c9b7]" name="AddProductToCart" duration-ms="920" started-at="2022-03-20T08:10:30Z" data-provider="data" finished-at="2022-03-20T08:10:31Z">
           <params>
             <param index="0">
               <value>
@@ -29,33 +29,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductToCart -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.AddToCartTest@20d28811]" name="teardown" is-config="true" duration-ms="1278" started-at="2022-03-19T16:16:45Z" finished-at="2022-03-19T16:16:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AddProductToCart status=SUCCESS method=AddToCartTest.AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@20d28811] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.com.AddToCartTest@60d8c9b7]" name="teardown" is-config="true" duration-ms="0" started-at="2022-03-20T08:10:31Z" finished-at="2022-03-20T08:10:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.test.com.AddToCartTest -->
     </test> <!-- Test -->
-    <test name="Test2" duration-ms="10142" started-at="2022-03-19T16:16:39Z" finished-at="2022-03-19T16:16:49Z">
+    <test name="Test2" duration-ms="5178" started-at="2022-03-20T08:10:31Z" finished-at="2022-03-20T08:10:37Z">
       <class name="com.test.com.AddToCartTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@22a637e7]" name="setup" is-config="true" duration-ms="7574" started-at="2022-03-19T16:16:40Z" finished-at="2022-03-19T16:16:47Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@1d119efb]" name="setup" is-config="true" duration-ms="4082" started-at="2022-03-20T08:10:31Z" finished-at="2022-03-20T08:10:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FF]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@22a637e7]" name="AddProductToCart" duration-ms="381" started-at="2022-03-19T16:16:47Z" data-provider="data" finished-at="2022-03-19T16:16:48Z">
+        <test-method status="PASS" signature="AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@1d119efb]" name="AddProductToCart" duration-ms="1058" started-at="2022-03-20T08:10:36Z" data-provider="data" finished-at="2022-03-20T08:10:37Z">
           <params>
             <param index="0">
               <value>
@@ -66,14 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductToCart -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.com.AddToCartTest@22a637e7]" name="teardown" is-config="true" duration-ms="1571" started-at="2022-03-19T16:16:48Z" finished-at="2022-03-19T16:16:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AddProductToCart status=SUCCESS method=AddToCartTest.AddProductToCart(java.lang.String)[pri:0, instance:com.test.com.AddToCartTest@22a637e7] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.com.AddToCartTest@1d119efb]" name="teardown" is-config="true" duration-ms="0" started-at="2022-03-20T08:10:37Z" finished-at="2022-03-20T08:10:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

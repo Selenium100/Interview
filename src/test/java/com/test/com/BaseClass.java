@@ -1,14 +1,19 @@
 package com.test.com;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.utility.com.ConfigReader;
@@ -26,14 +31,32 @@ public class BaseClass {
 	@Parameters("browser")
 	public void setup(String browser) {
 		
-		if(browser.equals("Chrome")) {
+		if(browser.equals("chrome")) {
 			
 			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
-		}else if(browser.equals("FF")) {
+			DesiredCapabilities cap=new DesiredCapabilities();
+			cap.setCapability("browserName", "chrome");
+			
+			try {
+				
+				driver=new RemoteWebDriver(new URL("http://65.0.80.26:4444/wd/hub"), cap);
+			} catch (MalformedURLException e) {
+				e.getMessage();
+			}
+			
+		}else if(browser.equals("firefox")) {
 			
 			WebDriverManager.firefoxdriver().setup();
-			driver=new FirefoxDriver();
+			DesiredCapabilities cap=new DesiredCapabilities();
+			cap.setCapability("browserName", "firefox");
+			
+			try {
+				
+				driver=new RemoteWebDriver(new URL("http://65.0.80.26:4444/wd/hub"), cap);
+			} catch (MalformedURLException e) {
+				
+				e.getMessage();
+			}
 		}
 		try {
 
@@ -48,14 +71,10 @@ public class BaseClass {
 	}
 	
 	@AfterMethod
-	public void teardown(ITestResult result) {
+	public void teardown() {
 
-		if (ITestResult.FAILURE == result.getStatus()) {
 
-			Utility.takescreenshot(driver);
-		}
-
-		 driver.quit();
+		// driver.quit();
 	}
 
 

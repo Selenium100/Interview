@@ -23,7 +23,7 @@ import com.utility.com.ExcelUtils;
 import com.utility.com.MongoDbTestListner;
 
 //@Listeners(MongoDbTestListner.class)
-public class E2EFlowTest extends BaseClassBrowerStack {
+public class E2EFlowTest extends BaseClass {
 
 
 	
